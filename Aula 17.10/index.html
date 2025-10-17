@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="nav-container">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#oquee" class="menu-link">O que é</a></li>
+                    <li class="menu-item"><a href="#funcoes" class="menu-link">Funções</a></li>
+                    <li class="menu-item"><a href="#exemplos" class="menu-link">Exemplos</a></li>
+                    <li class="menu-item"><a href="#tipos" class="menu-link">Tipos</a></li>
+                    <li class="menu-item"><a href="#caracteristicas" class="menu-link">Características / Importancia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="main-title">Banco de Dados</h1>
+
+    <main class="main-content">
+        <section id="oquee" class="section section-oquee">
+            <h2 class="section-title">O que é?</h2>
+            <div class="section-content">
+                <p class="content-text">
+                    Um Sistema Gerenciador de Banco de Dados (SGBD) é um software responsável por criar, organizar, manipular e administrar bancos de dados. 
+                    Ele atua como uma camada intermediária entre o usuário e o banco de dados físico, permitindo que as informações sejam armazenadas, 
+                    consultadas e atualizadas de forma eficiente e segura.
+                </p>
+                <img class="section-img" 
+                     src="https://horadecodar.com.br/wp-content/uploads/2023/06/banco-de-dados.png" 
+                     alt="Ilustração de um Banco de Dados">
+            </div>
+        </section>
+
+        <section id="funcoes" class="section section-funcoes">
+            <h2 class="section-title">Funções de um SGBD</h2>
+            <div class="section-content">
+                <div class="text-block">
+                    <p><strong>Armazenamento e recuperação:</strong> permite salvar e consultar grandes volumes de dados rapidamente.</p>
+                    <p><strong>Controle de acesso:</strong> define quem pode ver ou alterar informações.</p>
+                    <p><strong>Integridade e consistência:</strong> mantém dados válidos mesmo em falhas.</p>
+                    <p><strong>Backup e recuperação:</strong> protege e restaura informações perdidas.</p>
+                    <p><strong>Gerenciamento de transações:</strong> garante que operações ocorram sem erros.</p>
+                    <p><strong>Segurança:</strong> protege contra acessos indevidos e ataques.</p>
+                </div>
+                <img class="section-img" 
+                     src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" 
+                     alt="Administrador de Banco de Dados">
+            </div>
+        </section>
+
+        <section id="exemplos" class="section section-exemplos">
+            <h2 class="section-title">Exemplos Práticos</h2>
+            <div class="section-content">
+                <p class="content-text">
+                    Imagine uma biblioteca: o banco de dados armazena informações sobre livros, usuários e empréstimos. 
+                    Ele permite saber facilmente quem pegou qual livro, quando devolver e quais títulos estão disponíveis.
+                </p>
+                <p class="content-text">
+                    Empresas:</strong> controle de clientes, vendas e estoque (ex: sistemas ERP).<br>
+                    <strong>Bancos:</strong> registros de contas, transferências e históricos de transações.<br>
+                    <strong>Sites e apps:</strong> armazenamento de usuários, postagens e comentários (ex: redes sociais).
+                </p>
+                <img class="section-img" 
+                     src="https://hermes.dio.me/assets/articles/35d02b71-a37b-437e-8523-4201f00ca580.png" 
+                     alt="Exemplo de uso de banco de dados">
+            </div>
+        </section>
+
+        <section id="tipos" class="section section-tipos">
+            <h2 class="section-title">Tipos de Bancos de Dados</h2>
+            <div class="tipos-container">
+                <div class="tipo tipo-relacional">
+                    <img class="tipo-img" 
+                         src="https://cdn-icons-png.flaticon.com/512/2721/2721293.png" 
+                         alt="Banco de Dados Relacional">
+                    <h3 class="tipo-titulo">Relacionais (SQL)</h3>
+                    <p class="content-text">
+                        Usam tabelas com linhas e colunas e a linguagem SQL. Ideais para sistemas estruturados e transações.
+                    </p>
+                    <ul class="tipo-lista">
+                        <li>MySQL – amplamente usado em sites</li>
+                        <li>PostgreSQL – estável e avançado</li>
+                        <li>Oracle Database – corporativo</li>
+                        <li>SQL Server – padrão da Microsoft</li>
+                    </ul>
+                </div>
+
+                <div class="tipo tipo-naorelacional">
+                    <img class="tipo-img" 
+                         src="https://cdn-icons-png.flaticon.com/512/2920/2920345.png" 
+                         alt="Banco de Dados Não Relacional">
+                    <h3 class="tipo-titulo">Não Relacionais (NoSQL)</h3>
+                    <p class="content-text">
+                        Mais flexíveis, não usam tabelas. Armazenam dados em documentos, grafos ou pares chave-valor.
+                    </p>
+                    <ul class="tipo-lista">
+                        <li>MongoDB – formato de documentos (JSON)</li>
+                        <li>Cassandra – ideal para dados distribuídos</li>
+                        <li>Redis – chave-valor e alta performance</li>
+                        <li>Firebase – usado em apps em tempo real</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="section section-caracteristicas">
+            <h2 class="section-title">Características e Importância</h2>
+            <div class="section-content">
+                <p class="content-text">
+                    Um SGBD é essencial no desenvolvimento de sistemas modernos, pois:
+                </p>
+                <ul class="content-list">
+                    <li>Organiza dados de forma eficiente;</li>
+                    <li>Facilita o acesso simultâneo de vários usuários;</li>
+                    <li>Melhora o desempenho e a confiabilidade do sistema;</li>
+                    <li>Simplifica a manutenção e a escalabilidade de aplicações;</li>
+                    <li>Reduz erros humanos e garante a integridade das informações.</li>
+                </ul>
+                <p class="content-text">
+                    <strong>Controle de acesso:</strong> define níveis de permissão (ex: administrador, usuário comum).<br>
+                    <strong>Integridade:</strong> garante que as relações e regras entre dados sejam respeitadas.<br>
+                    <strong>Consistência:</strong> assegura que o banco de dados permaneça em um estado válido mesmo após falhas.<br>
+                    <strong>Segurança:</strong> protege contra acessos indevidos e ataques, usando autenticação, criptografia e logs de auditoria.
+                </p>
+            </div>
+        </section>
+
+        <section id="resumo" class="section section-resumo">
+            <h2 class="section-title">Resumo</h2>
+            <p class="content-text">
+                Um SGBD é o coração dos sistemas modernos — organiza, protege e garante que os dados estejam sempre disponíveis e consistentes.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer-text"><strong>Desenvolvido por :  Gustavo | 17 —  Henrique | 18 </strong></h3>
+    </footer>
+</body>
+</html>
